@@ -1,8 +1,0 @@
-在 rsa 中，如果使用同一把公鑰對有線性關係的明文作加密，則可以對其作破解
-
-而在 d 小於 1/3 n 的 1/4 次方時，則可以藉由還原出 phi(n) 來求得 d
-
-推薦閱讀:
-
-https://www.cs.unc.edu/~reiter/papers/1996/Eurocrypt.pdf
-https://en.wikipedia.org/wiki/Wiener%27s_attack
