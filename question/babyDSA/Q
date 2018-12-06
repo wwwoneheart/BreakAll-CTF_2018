@@ -1,0 +1,12 @@
+alice 和 bob 目前正在熱戀中，bob 覺得是時候該結婚了，也經由路邊看起來很可靠的算命師說今天適合求婚，不論是何種方式都可。奈何 bob 今天早上臨時被公司外派出去無法趕回來見alice ，只好委託他最要好的朋友 Eve 幫他把他的求婚訊息拿給 alice ，為怕中途出現任何意外，bob 特地使用了 DSA 做數位簽章，以防止他人竄改訊息，而其實Eve也深深愛著 bob 而不想他跟 alice 結婚，所以打算偽造bob 要給 alice 的訊息。
+
+signed.txt 是 bob 要給 alice 的訊息
+signature 是 bob 對 signed.txt 做 dsa 得到的數位簽章
+need_to_sign.txt 是 eve 想要偽造傳給 alice 的訊息
+code.py 是 eve 偷偷得到 bob 使用 dsa 做數位簽章的整個程式碼
+public.pem 是 bob 的公鑰
+
+請你想辦法獲取 bob 的私鑰來重新對 need_to_sign.txt 做簽章 。
+
+FLAG 為 BreakALLCTF{md5(r + s)}
+意即如果你對 need_to_sign.txt 做簽章得到 r = 1 , s = 2 ，則 FLAG 為BreakALLCTF{md5(3)}
